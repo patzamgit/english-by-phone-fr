@@ -244,13 +244,16 @@ header.masthead h2 {
 .portfolio .portfolio-item h5{
     color:#2c3e50;
 }
-
-
 .portfolio .portfolio-item .portfolio-item-caption {
-    -webkit-transition: all ease .5s;
-    transition: all ease .5s;
-    opacity: 0;
-    background-color: rgba(248, 249, 250, .9);
+	-webkit-transition: all ease .5s;
+	transition: all ease .5s;
+	opacity: 0;
+	background-color: rgba(248, 249, 250, .9);
+}
+@media(max-width:767px){
+	.portfolio .portfolio-item .portfolio-item-caption {
+		display:none !important;
+	}
 }
 
 .portfolio .portfolio-item .portfolio-item-caption:hover {
@@ -258,7 +261,8 @@ header.masthead h2 {
 }
 
 .portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
-    font-size: 1.5rem
+    font-size: 1.5rem;
+    color: #2B3E50 !important;
 }
 
 @media (min-width:576px) {
@@ -443,4 +447,89 @@ a:hover {
 	color: #2B3E50;
     font-weight: bold;
     text-decoration: underline;
+}
+/****************** FAQ ****************/
+
+.faq-nav {
+  flex-direction: column;
+  margin: 0 0 32px;
+  border-radius: 2px;
+  border: 1px solid #ddd;
+  box-shadow: 0 1px 5px rgba(85, 85, 85, 0.15);
+}
+.faq-nav .nav-link {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 13px 16px;
+  background-color: #fff;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+  border-radius: 0;
+  color: #616161;
+  transition: background-color .2s ease;
+}
+.faq-nav .nav-link:hover {
+  background-color: #f6f6f6;
+}
+.faq-nav .nav-link.active {
+  background-color: #f6f6f6;
+  font-weight: 700;
+  color: #2c3e50;
+}
+.faq-nav .nav-link:last-of-type {
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-bottom: 0;
+}
+.faq-nav .nav-link i.mdi {
+  margin-right: 5px;
+  font-size: 18px;
+  position: relative;
+}
+
+.tab-content {
+  box-shadow: 0 1px 5px rgba(85, 85, 85, 0.15);
+}
+.tab-content .card {
+  border-radius: 0;
+}
+.tab-content .card-header {
+  padding: 15px 16px;
+  border-radius: 0;
+  background-color: #f6f6f6;
+}
+.tab-content .card-header h5 {
+  margin: 0;
+}
+.tab-content .card-header h5 button {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  font-weight: 700;
+  color: #2c3e50;
+  text-align: left;
+  white-space: normal;
+}
+.tab-content .card-header h5 button:hover, .tab-content .card-header h5 button:focus, .tab-content .card-header h5 button:active, .tab-content .card-header h5 button:hover:active {
+  text-decoration: none;
+}
+.tab-content .card-body p {
+  color: #616161;
+}
+.tab-content .card-body p:last-of-type {
+  margin: 0;
+}
+
+.accordion > .card:not(:first-child) {
+  border-top: 0;
+}
+
+.collapse.show .card-body {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+.clickable{
+	color: #2c3e50 !important;
+    text-decoration: underline !important;
 }
