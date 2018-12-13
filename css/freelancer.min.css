@@ -248,7 +248,7 @@ header.masthead h2 {
 	-webkit-transition: all ease .5s;
 	transition: all ease .5s;
 	opacity: 0;
-	background-color: rgba(248, 249, 250, .9);
+	background-color: transparent;
 }
 @media(max-width:767px){
 	.portfolio .portfolio-item .portfolio-item-caption {
