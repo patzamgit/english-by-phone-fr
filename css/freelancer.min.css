@@ -239,6 +239,7 @@ header.masthead h2 {
 }
 .portfolio .portfolio-item img{
        min-height: 301px;
+       width: auto;
 }
 
 .portfolio .portfolio-item h5{
@@ -532,4 +533,18 @@ a:hover {
 .clickable{
 	color: #2c3e50 !important;
     text-decoration: underline !important;
+}
+
+.btn {
+    max-width: 100%;
+}
+
+.owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 20px;
+}
+#termly-code-snippet-support section {
+    padding: 0;
+}
+a:active, a:focus, a:hover {
+    color:#2B3E50;
 }
